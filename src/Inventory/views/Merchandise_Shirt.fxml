@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.77" prefHeight="819.0" prefWidth="1176.0" style="-fx-background-color: #d9d3d3; -fx-border-color: #000000; -fx-border-width: 0px 20px 0px 20px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventory.controllers.MenuController">
+    <children>
+      <VBox alignment="TOP_CENTER" layoutX="107.0" prefHeight="845.0" prefWidth="179.0" style="-fx-background-color: #2F4858;" AnchorPane.leftAnchor="0.0">
+         <children>
+              <ImageView fitHeight="243.0" fitWidth="238.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../gui_images/ChefLogo.png" />
+                  </image>
+               <VBox.margin>
+                  <Insets left="1.0" />
+               </VBox.margin>
+              </ImageView>
+              <Label fx:id="label11" alignment="CENTER" prefHeight="40.0" prefWidth="251.0" text="Bahala Na Si Chef Resto" textFill="WHITE">
+                  <font>
+                      <Font name="Impact" size="23.0" />
+                  </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+              </Label>
+              <Label fx:id="label" alignment="CENTER" prefHeight="15.0" prefWidth="246.0" text="Inventory Management" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold Italic" size="13.0" />
+                  </font>
+              </Label>
+              <Label fx:id="label1" alignment="CENTER" prefHeight="20.0" prefWidth="246.0" text="System" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold Italic" size="13.0" />
+                  </font>
+              </Label>
+            <Button fx:id="homeButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#changeToHomeScreen" prefHeight="50.0" prefWidth="258.0" style="-fx-background-color: #aeaeae;" text="Home">
+               <VBox.margin>
+                  <Insets left="21.0" top="47.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gui_images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="productsButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#changeToProductScene" prefHeight="50.0" prefWidth="258.0" style="-fx-background-color: #aeaeae;" text="Products">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gui_images/products.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="21.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="MenuButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#changeToMenuScene" prefHeight="50.0" prefWidth="258.0" style="-fx-background-color: #aeaeae;" text="Menu">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gui_images/categories.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="21.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="signOutButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#signOutButtonPressed" prefHeight="50.0" prefWidth="258.0" style="-fx-background-color: #aeaeae;" text="Sign Out">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gui_images/signOut.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="21.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="264.0" layoutY="23.0" prefHeight="774.0" prefWidth="919.0" AnchorPane.leftAnchor="244.0">
+         <children>
+            <Button layoutX="805.0" layoutY="738.0" mnemonicParsing="false" onAction="#Merchandise" style="-fx-background-color: #575F71;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Label fx:id="title1" alignment="TOP_LEFT" layoutX="324.0" layoutY="275.0" prefHeight="62.0" prefWidth="521.0" text="Bahala Na Si Chef T-Shirt" textAlignment="CENTER" textFill="#100d0c" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Label>
+            <Label fx:id="title111" alignment="TOP_LEFT" layoutX="270.0" layoutY="337.0" prefHeight="179.0" prefWidth="335.0" textFill="#100d0c" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="310.0" fitWidth="335.0" layoutX="14.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gui_images/menu_images/Tshirt.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="title" alignment="TOP_LEFT" layoutX="15.0" layoutY="65.0" prefHeight="62.0" prefWidth="277.0" text="Merchandise" textAlignment="CENTER" textFill="#100d0c" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Impact" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="127.0" text="&quot;Bring a piece of our culture home with you through our authentic merchandise, a perfect reminder of your dining experience with us.&quot;">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
